@@ -1,0 +1,115 @@
+<style>
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+}
+</style>
+
+<div class="landing">
+    <header>
+        <div class="header-content">
+            <div id="homeHeading" class="header-content-inner">
+                <h1>Memory Friends</h1>
+                <hr>
+                <h3>Save and share all your greatest moments</h3>
+                <h2>So you never forget the moments that matter </h2>
+                <%= link_to "Create Your Free Account", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Connect with friends and the world around you on Memory Friends.</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>See photos and updates</h3>
+                        <p class="text-muted">from friends in your timeline.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Gain new insights</h3>
+                        <p class="text-muted">in your everyday life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>Reflect</h3>
+                        <p class="text-muted">on all of your great new experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 text-center">
+                    <div class="service-box">
+                        <a href="#demo" class="btn btn-primary btn-xl page-scroll">Check out a demo!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="demo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>Gif Demo 1</h3>
+                        <p class="text-muted">Caption 1</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Gif Demo 2</h3>
+                        <p class="text-muted">Caption 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 text-center">
+                    <%= link_to "Create Your Free Account", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Scroll Animations -->
+<script>
+    window.sr = ScrollReveal();
+    
+    sr.reveal('#about .container', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px',
+        easing   : 'ease-in-out',
+        reset: true
+    }, 200);
+
+    sr.reveal('#demo .container', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px',
+        easing   : 'ease-in-out',
+        reset: true
+    }, 200);
+</script>

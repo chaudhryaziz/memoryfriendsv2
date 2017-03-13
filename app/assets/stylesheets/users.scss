@@ -1,0 +1,47 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* People Page */
+
+body {
+    background-color: #53585A;
+}
+
+.jumbotron {
+    background-color: #64716D;
+}
+
+.jumbotron .container {
+    margin-top: 50px;
+}
+
+.thumbnail .caption {
+    text-align: center;
+}
+
+.thumbnail .caption p {
+    font-size: 90%;
+}
+
+.panel {
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+}
+
+.timeline-panel {
+    background-color: white;
+}
+
+.timeline-inverted .timeline-badge {
+    animation: none;
+}
+
+.timeline-inverted .timeline-badge img {
+    animation: none;
+}
+
+.timeline-badge {
+    animation: none;
+}
